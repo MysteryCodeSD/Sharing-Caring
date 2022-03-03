@@ -29,7 +29,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
                 [
                     [
                         InlineKeyboardButton("⚡ 𝘾𝙝𝙖𝙣𝙣𝙚𝙡 𝙇𝙞𝙣𝙠𝙨 ⚡", url = "https://t.me/FuZionX_PathWay/52")
-                    ]
+                    ],
                     [
                         InlineKeyboardButton("↩ 𝗕𝗮𝗰𝗸", callback_data = "back"),
                         InlineKeyboardButton("🔐 𝗖𝗹𝗼𝘀𝗲 🔐", callback_data = "close")
@@ -42,11 +42,11 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton("⚡ 𝗛𝗲𝗹𝗽 ⚡", callback_data = "help")
-                ]
+                ],
                 [
                     InlineKeyboardButton("⚡ 𝗔𝗯𝗼𝘂𝘁 𝗠𝗲 ⚡", callback_data = "about"),
                     InlineKeyboardButton("⚡ 𝗖𝗹𝗼𝘀𝗲 ⚡", callback_data = "close")
-                ]
+                ],
                 [
                     InlineKeyboardButton("⚡ 𝙁𝙪𝙕𝙞𝙤𝙣𝙓 ⚡", url = "https://t.me/FuZionX"),
                     InlineKeyboardButton("⚡ 𝙎𝙪𝙥𝙥𝙤𝙧𝙩 𝙂𝙧𝙤𝙪𝙥 ⚡", url = "https://t.me/FuZionXGroup")
