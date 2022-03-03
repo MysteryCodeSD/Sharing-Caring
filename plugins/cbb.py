@@ -62,8 +62,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
                 id = query.message.from_user.id
             ),
             reply_markup = reply_markup,
-            disable_web_page_preview = True,
-            quote = True
+            disable_web_page_preview = True
         )
     elif data == "close":
         await query.message.delete()
