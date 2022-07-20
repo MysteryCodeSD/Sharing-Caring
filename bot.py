@@ -1,7 +1,7 @@
 #(©)Codexbotz
 
 import pyromod.listen
-from pyrogram import Client
+from pyrogram import Client, enums
 import sys
 
 from config import API_HASH, APP_ID, LOGGER, TG_BOT_TOKEN, TG_BOT_WORKERS, FORCE_SUB_CHANNEL, CHANNEL_ID
@@ -45,7 +45,7 @@ class Bot(Client):
             self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/CodeXBotzSupport for support")
             sys.exit()
 
-        self.set_parse_mode("html")
+        self.set_parse_mode(enums.ParseMode.HTML)
         self.LOGGER(__name__).info(f"Bot Running..!\n\nCreated by 𝘾𝙤𝙙𝙚 𝕏 𝘽𝙤𝙩𝙯\nhttps://t.me/CodeXBotz")
         self.username = usr_bot_me.username
 
