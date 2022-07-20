@@ -3,7 +3,7 @@
 import base64
 import re
 import asyncio
-from pyrogram import filters
+from pyrogram import filters, enums
 from config import FORCE_SUB_CHANNEL, ADMINS
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant
 from pyrogram.errors import FloodWait
@@ -19,7 +19,7 @@ async def is_subscribed(filter, client, update):
     except UserNotParticipant:
         return False
 
-    if not member.status in ["creator", "administrator", "member"]:
+    if not member.status in [enums.ChatMemberStatus.OWNER, enums.ChatMemberStatus.ADMINISTRATOR, enums.ChatMemberStatus.MEMBER]:
         return False
     else:
         return True
