@@ -3,6 +3,7 @@ version: "3.9"
 services:
   filedb:
     build: .
+    container_name: filedb
     environment:
       API_ID: $API_ID
       API_HASH: $API_HASH
@@ -14,3 +15,6 @@ services:
       ADMINS: $ADMINS
       START_MSG: $START_MSG
       CUSTOM_CAPTION: $CUSTOM_CAPTION
+    ports:
+      - 8080:8080
+    restart: unless-stopped
