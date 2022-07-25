@@ -15,4 +15,6 @@ services:
       ADMINS: $ADMINS
       START_MSG: $START_MSG
       CUSTOM_CAPTION: $CUSTOM_CAPTION
+    ports:
+      - "80:80"
     restart: unless-stopped
