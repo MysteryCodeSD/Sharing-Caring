@@ -17,6 +17,4 @@ services:
       CUSTOM_CAPTION: $CUSTOM_CAPTION
     ports:
       - 8080:8080
-    endpoints:
-      - port: 8080
     restart: unless-stopped
